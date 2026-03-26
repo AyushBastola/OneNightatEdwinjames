@@ -24,8 +24,8 @@ public class Main {
         System.out.println("Press Enter to Begin...");
         String nextDialogue7 = input.nextLine();
         Edwinjames edwinjames = new Edwinjames();
-//        NightTimer nightTimerClass = new NightTimer();
-//        Thread night = new Thread(nightTimerClass);
+        NightTimer nightTimerClass = new NightTimer();
+        nightTimerClass.start();
         while (true) {
             System.out.println("╔══════════════════════════╗\n" +
                     "║INPUT 1: OPEN CAMERAS     ║\n" +
@@ -67,6 +67,10 @@ public class Main {
                     System.out.println("You're in the kitchen.");
                 } else if (cameraInput == 4) {
                     System.out.println("You're in the basement.");
+                } else {
+                    System.out.println("╔═════════════╗\n" +
+                            "║INVALID INPUT║\n" +
+                            "╚═════════════╝");
                 }
             } else if (panelInput == 2) {
                 System.out.println("You set the panel down and check the bedroom.");

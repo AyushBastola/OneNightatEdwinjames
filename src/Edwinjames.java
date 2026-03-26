@@ -6,8 +6,8 @@ public class Edwinjames {
     private int camera;
     public Edwinjames() {
         this.name = "Edwinjames";
-        this.aiLevel = (int) (Math.random() * 20) + 1;
-        this.camera = 4;
+        this.aiLevel = (int) (Math.random() * 20) + 1; // To put it shortly, the bigger this variable is, the more likely Edwinjames is moving. And the exact opposite happens if this variable is smaller.
+        this.camera = 4; // Edwinjames will start off in the basement.
     }
 
 }
